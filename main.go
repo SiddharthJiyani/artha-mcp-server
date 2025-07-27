@@ -42,10 +42,8 @@ func corsMiddleware(next http.Handler) http.Handler {
         
         // Allow requests from localhost on various ports for development
         allowedOrigins := []string{
-            "http://localhost:3000",
+            "https://project-artha-backup.vercel.app",
             "http://127.0.0.1:3000",
-            "http://localhost:3001",
-            "http://127.0.0.1:3001",
         }
         
         // Check if origin is allowed
